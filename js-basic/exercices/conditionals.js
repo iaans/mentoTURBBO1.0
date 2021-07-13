@@ -1,21 +1,21 @@
-// //SwtichCase
-// //Funções devem conter verbos e demonstrar o que ela faz através do nome
-// function getChampion(champion) {
-//   let team;
-//   switch (champion) {
-//     case "Italia":
-//       team = "Bicampeã";
-//       break;
-//     case "Inglaterra":
-//       team = "Vice campeã";
-//       break;
-//     default:
-//       return "Foi eliminado";
-//   }
-//   return team;
-// }
-// getChampion("Italia");
-// console.log(getChampion("Italia"));
+//SwtichCase
+//Funções devem conter verbos e demonstrar o que ela faz através do nome
+function getChampion(champion) {
+  let team;
+  switch (champion) {
+    case "Italia":
+      team = "Bicampeã";
+      break;
+    case "Inglaterra":
+      team = "Vice campeã";
+      break;
+    default:
+      return "Foi eliminado";
+  }
+  return team;
+}
+getChampion("Italia");
+console.log(getChampion("Italia"));
 
 // If & Else;
 const value1 = 30;
