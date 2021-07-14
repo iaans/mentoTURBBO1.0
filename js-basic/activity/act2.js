@@ -5,7 +5,7 @@ const numbers = [3, 7, 2, 8, 1];
 // B) Reverse the numbers [1, 8, 2, 7, 3]
 // C) Push new these numbers to the array => 10, 99, 55, 77
 // D) Get the array updated
-// E Get odd numbers and even numbers.
+// E) Get odd numbers and even numbers.
 
 // SHOW ALL THE RESULTS ON THE SCREEN (CONSOLE.LOG)
 console.log("Array of numbers:");
