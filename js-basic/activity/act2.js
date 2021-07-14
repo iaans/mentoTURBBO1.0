@@ -21,12 +21,12 @@ numbers.push(10, 99, 55, 77);
 console.log("Add numbers:\n" + numbers);
 
 //D
-const getNumbers = numbers[numbers.length - 1];
-console.log("Last element of the array:", getNumbers);
+const lastElement = numbers[numbers.length - 1];
+console.log("Last element of the array:", lastElement);
 
 //E
 let odds = numbers.filter((num) => num % 2);
 console.log("Odd numbers: ", odds);
 
-// let even = numbers.filter((n) => n * 2);
-// console.log("Even numbers: ", even);
+let even = numbers.filter((num) => !(num % 2));
+console.log("Even numbers: ", even);
