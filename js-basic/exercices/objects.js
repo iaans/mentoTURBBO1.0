@@ -121,7 +121,7 @@ fruits.pineapple = {
 const spreaded = { ...moreFruits, ...car };
 console.log("Spreaded Fruits => ", spreaded);
 
-console.log("Spreaded Fruits => ", { ...moreFruits, ...car });
+// console.log("Spreaded Fruits => ", { ...moreFruits, ...car });
 
 function printFruit({ name, price, amount }) {
   console.log("Your fruit => ", name, price, amount);
@@ -129,3 +129,4 @@ function printFruit({ name, price, amount }) {
 
 printFruit({ price: 12.9, amount: 10, name: "Pineapple" });
 printFruit({ ...fruits.banana, name: "Banana" });
+*/

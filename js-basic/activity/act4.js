@@ -9,25 +9,27 @@ const numbers = [3, 7, 2, 8, 1];
 // F) Get odd numbers and even numbers.
 
 // SHOW ALL THE RESULTS ON THE SCREEN (CONSOLE.LOG)
-console.log("Array of numbers:");
-console.log(numbers);
+console.log(`Array of numbers: ${numbers}`);
+
 //A
-console.log("Numbers ascending order:\n", numbers.sort());
-
+console.log("Numbers ascending order: ↓ \n", numbers.sort());
 //B
-console.log("Numbers reverse:\n", numbers.reverse());
-
+console.log("Numbers reverse: ↓ \n", numbers.reverse());
 //C
 numbers.push(10, 99, 55, 77);
-console.log("Add numbers:\n" + numbers);
+//console.log(`Add numbers: ↓ \n `, numbers);
+console.log("Add numbers: ↓ \n", numbers);
 
 //D
 const lastElement = numbers[numbers.length - 1];
-console.log("Last element of the array:", lastElement);
+console.log("Last element of the array is: ↓ \n", lastElement);
 
 //E
+console.log("Array update: ↓ \n", numbers); //?
+
+//F
 let odds = numbers.filter((num) => num % 2);
-console.log("Odd numbers: ", odds);
+console.log("Odds numbers: ↓ \n", odds);
 
 let even = numbers.filter((num) => !(num % 2));
-console.log("Even numbers: ", even);
+console.log("Even numbers: ↓ \n", even);

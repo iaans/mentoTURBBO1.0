@@ -7,8 +7,7 @@
 //   java: "java",
 //   typescript: "typescript",
 //   python: "python",
-// }w
-
+// }
 // A) Destructure two of yout favourite techs and print them
 // B) Create a new object with these techs, except the one you dislike most
 // C) Create a new object with these techs and add two more that you wish to learn in the future
@@ -43,7 +42,7 @@ const addTechs = {
 console.log("C) Add more two techs: \n", addTechs, "\n ---");
 
 // D)
-function printNameAndDate(techName = "React", creationDate = "15/04/1500") {
-  console.log(`Tech name => ${techName} \nCreation date=> ${creationDate}`);
+function printNameDate({ techName, dateCreation }) {
+  console.log(`Name=> ${techName},\nCreation Date=> ${dateCreation}`);
 }
-printNameAndDate();
+printNameDate({ techName: "Angular", dateCreation: "26/12/1997" });
