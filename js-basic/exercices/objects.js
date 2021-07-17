@@ -8,7 +8,7 @@
 //   maxSpeed = 180;
 
 //   accelerate() {
-//     console.log("Accelerated! VRUM!!!");
+//     console.log("Acclerated! VRUM!!!");
 //   }
 //   getMaxSpeed() {
 //     return "180km/h";
