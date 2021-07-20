@@ -9,9 +9,8 @@ for (let index = 0; index < 10; index++) {
 let counter = 0;
 
 // pergunta antes de fazer, pergunta primeiro, faz depois
-while (counter < 10) {
+while (counter > 10) {
   console.log("counter is => ", counter);
-
   counter++; // counter = counter + 1;
 }
 
@@ -22,7 +21,6 @@ let diasParaFestaJulina = 10;
 // chega fazendo, faz primeiro, pergunta depois
 do {
   console.log("Dias para a festa julina => ", diasParaFestaJulina);
-
   diasParaFestaJulina--;
 } while (diasParaFestaJulina > 0);
 
