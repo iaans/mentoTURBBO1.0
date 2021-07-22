@@ -129,4 +129,3 @@ function printFruit({ name, price, amount }) {
 
 printFruit({ price: 12.9, amount: 10, name: "Pineapple" });
 printFruit({ ...fruits.banana, name: "Banana" });
-*/

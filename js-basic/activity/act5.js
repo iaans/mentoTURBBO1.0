@@ -72,3 +72,4 @@ class Smartphone extends Phone {
 
 const smartphone = new Smartphone(47, "Nokia");
 console.log(smartphone.updateContacts(["712321", "784213", "5784132"]));
+console.log(smartphone.updateContacts([])
