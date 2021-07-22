@@ -1,6 +1,8 @@
 // 1) Create a function that receives an array of movie names as parameter and loop through each item,
 //    printing them in the screen with a console log
-const movie = [];
+function getMovie() {
+  const movie = [];
+}
 
 // 2) Create a class with Animal -
 
@@ -31,12 +33,13 @@ class Animal {
     return "hu hu hu";
   }
 }
-// console.log(Animal.age); <--
-// console.log(Animal.specie); <--
 
-const ani = new Animal("Ave", "5");
-console.log(ani);
-console.log(ani.sleep);
+const ani = new Animal("Bird", "5");
+console.log("Specie >", ani.specie);
+console.log("Age >", ani.age);
+console.log(ani.sleep());
+console.log(ani.eat());
+console.log(ani.scream());
 
 // 3) Create a class Tiger that extends Animal
 
@@ -57,9 +60,19 @@ class Tiger extends Animal {
     });
     return this.animal;
   }
+
+  //overwrite
+  scream() {
+    return "woarr..";
+  }
 }
 
-const animal = new Animal("Feline", "5");
-//console.log(animal.updateAnimal(["Dog"])); // ??????
+const tig = new Tiger("Feline", "10");
+console.log(`Specie > ${tig.specie}`);
+console.log(`Age > ${tig.age}`);
+console.log(`Scream > ${tig.scream()}`);
+
+//console.log(`Scream > ${animal.scream()}`);
+//console.log(animal.scream("woarr woarr woarr"));
 
 // 4) Create a new instance of Animal and Tiger and play with everything that you created, explore!
