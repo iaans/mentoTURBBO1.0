@@ -72,7 +72,23 @@ console.log(`Specie > ${tig.specie}`);
 console.log(`Age > ${tig.age}`);
 console.log(`Scream > ${tig.scream()}`);
 
-//console.log(`Scream > ${animal.scream()}`);
-//console.log(animal.scream("woarr woarr woarr"));
-
 // 4) Create a new instance of Animal and Tiger and play with everything that you created, explore!
+
+class Panthera extends Tiger {
+  constructor(specie, age) {
+    super(specie, age);
+  }
+  updateAnimal(newAnimals) {
+    newAnimals.foreach((animal) => {
+      this.animal.push(animal);
+    });
+    return this.animal;
+  }
+  scream() {
+    return "miaauwoarrr";
+  }
+}
+const panth = new Panthera("Feline", "6");
+console.log(`Specie >`, panth.specie);
+console.log(`Age >`, panth.age);
+console.log("Scream >", panth.scream());
