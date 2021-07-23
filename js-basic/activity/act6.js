@@ -1,8 +1,20 @@
 // 1) Create a function that receives an array of movie names as parameter and loop through each item,
 //    printing them in the screen with a console log
-function getMovie() {
-  const movie = [];
+function getMovie(movieNames) {
+  // movieNames.forEach((movie) => {
+  //   console.log(movie);
+  // });
+
+  movieNames.map((movie) => {
+    console.log(movie);
+  });
 }
+
+getMovie([
+  "A volta dos que não foram",
+  "Sei lá parte 2,",
+  "Sem criatividade parte 4",
+]);
 
 // 2) Create a class with Animal -
 
@@ -11,7 +23,7 @@ function getMovie() {
 // C) create a function eat() that prints on the console "eating" -
 // D) create a function sleep() that prints on the console "Zzz" -
 // E) create a function scream() that prints on the console "hu hu hu" -
-
+/*
 class Animal {
   specie;
   age;
@@ -92,3 +104,4 @@ const panth = new Panthera("Feline", "6");
 console.log(`Specie >`, panth.specie);
 console.log(`Age >`, panth.age);
 console.log("Scream >", panth.scream());
+*/

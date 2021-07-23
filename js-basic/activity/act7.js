@@ -9,8 +9,8 @@
 // E) create a function getMaxPassengers() that returns the maxPassengers of the vehicle (again, use the same maxPassengers you fulfilled on the constructor)
 
 class Vehicle {
-  passengers = ["Ian", "Jonatan", "Maria", "João"];
-  rules = [(maxSpeed = 50), (maxPassengers = 10)];
+  passengers = [""];
+  rules = [""];
 
   maxSpeed;
   maxPassengers;
@@ -21,13 +21,17 @@ class Vehicle {
   }
 
   getMaxSpeed() {
-    return this.maxSpeed;
+    return this.maxSpeed, "Km/h";
   }
 
-  getMasPassengers() {
+  getMaxPassengers() {
     return this.maxPassengers;
   }
 }
+
+const veich = new Vehicle(["Ian", "Joao", "Pedro", "Ana"], ["8", "40"]);
+console.log(veich.passengers);
+console.log(veich.rules);
 
 // 2) Create a class Bus that
 
@@ -49,3 +53,7 @@ class Bus extends Vehicle {
     this.rules = rules;
   }
 }
+
+// const bus = new (["Ian", "Joao", "Pedro", "Ana"], ["8", "40"]);
+// console.log(veich1.passengers);
+// console.log(veich1.rules);
