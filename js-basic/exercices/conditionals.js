@@ -32,3 +32,10 @@ if (value1 == value2) {
 console.log(value1 == value2);
 //Equals x3
 console.log(value1 === value2);
+
+function ternaryReturns(isTrue) {
+  return isTrue ? "It is true!" : "It is false!";
+}
+
+console.log(ternaryReturns(false));
+console.log(ternaryReturns(true));

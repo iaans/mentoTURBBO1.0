@@ -1,69 +1,99 @@
-class Department {
-  static fiscalYear = 2021; // static props doesn't require instantiating (new) to be used
-  id;
-  name;
-  employees = [];
+class Cellphone {
+  ring(music = "") {
+    // IF TERNARIO
+    console.log(music ? music : "Trimmm...");
 
-  // it's the first thing to be executed when instanciating a class
-  // you pass the necessary infomartions that the class need when creating
-  constructor(id, name) {
-    this.id = id;
-    this.name = name;
-  }
+    // IF/ELSE
 
-  describe() {
-    console.log(
-      `ID: ${this.id}, NAME: ${this.name}, EMPLOYEES: ${this.employees}`
-    );
-  }
+    // if (music) {
+    //   console.log(music);
+    // } else {
+    //   console.log("Trimmmm");
+    // }
 
-  addEmployee(employee) {
-    this.employees.push(employee);
-  }
-}
+    // SWITCH CASE
 
-console.log("Fiscal Year => ", Department.fiscalYear);
-
-const department = new Department(1, "Depat. 1");
-department.describe();
-
-sqrt = Math.sqrt(4);
-console.log("SQRT => ", sqrt);
-
-class ITDepartment extends Department {
-  admins = [];
-
-  constructor(id, name, admins) {
-    // to use the props from the parent class, you MUST use the super()
-    // it does the same as the 2 lines commented bellow
-    // this.id = id;
-    // this.name = name;
-    super(id, name);
-
-    this.admins = admins;
-  }
-
-  // overrides the describe() method from the parent class
-  describe() {
-    // on the functions, you can access the parent class props using this, no problems
-    console.log("IT Department - ID: " + this.id);
-    console.log("IT Department - Name: " + this.name);
+    // switch (music) {
+    //   case null || undefined || "":
+    //     console.log("Trimmm...");
+    //     break;
+    //   default:
+    //     console.log(music);
+    //     break;
+    // }
   }
 }
 
-const itDepartment = new ITDepartment(2, "IT Department", ["Ian", "Jonatas"]);
-itDepartment.describe();
+const phone = new Cellphone();
+phone.ring();
+phone.ring("Tim Maia - Eu gosto de você.mp3");
 
-class PI {
-  static value = 3.14159265359;
+// class Department {
+//   static fiscalYear = 2021; // static props doesn't require instantiating (new) to be used
+//   id;
+//   name;
+//   employees = [];
 
-  static getPi() {
-    return this.value;
-  }
-}
+//   // it's the first thing to be executed when instanciating a class
+//   // you pass the necessary infomartions that the class need when creating
+//   constructor(id, name) {
+//     this.id = id;
+//     this.name = name;
+//   }
 
-// You don't need to stanciate the class to use static methods or props
-console.log(PI.getPi());
+//   describe() {
+//     console.log(
+//       `ID: ${this.id}, NAME: ${this.name}, EMPLOYEES: ${this.employees}`
+//     );
+//   }
+
+//   addEmployee(employee) {
+//     this.employees.push(employee);
+//   }
+// }
+
+// console.log("Fiscal Year => ", Department.fiscalYear);
+
+// const department = new Department(1, "Depat. 1");
+// department.describe();
+
+// sqrt = Math.sqrt(4);
+// console.log("SQRT => ", sqrt);
+
+// class ITDepartment extends Department {
+//   admins = [];
+
+//   constructor(id, name, admins) {
+//     // to use the props from the parent class, you MUST use the super()
+//     // it does the same as the 2 lines commented bellow
+//     // this.id = id;
+//     // this.name = name;
+//     super(id, name);
+
+//     this.admins = admins;
+//   }
+
+//   // overrides the describe() method from the parent class
+//   describe() {
+//     // on the functions, you can access the parent class props using this, no problems
+//     console.log("IT Department - ID: " + this.id);
+//     console.log("IT Department - Name: " + this.name);
+//   }
+// }
+
+// const itDepartment = new ITDepartment(2, "IT Department", ["Ian", "Jonatas"]);
+// itDepartment.describe();
+
+// class PI {
+//   static value = 3.14159265359;
+
+//   static getPi() {
+//     return this.value;
+//   }
+// }
+
+// // You don't need to stanciate the class to use static methods or props
+// console.log(PI.getPi());
 
 // class Dog {
 // color = 'white';

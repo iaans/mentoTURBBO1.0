@@ -48,12 +48,37 @@ console.log(veich.rules);
 class Bus extends Vehicle {
   fueltype;
 
-  constructor(passengers, rules) {
-    this.passengers = passengers;
-    this.rules = rules;
+  constructor(passengers, rules, fueltype) {
+    super(passengers, rules);
+    this.fueltype = fueltype;
+  }
+
+  getFuelType() {
+    return this.fueltype;
+  }
+
+  addPassenger(newPassanger) {
+    newPassanger.forEach((passengers) => {
+      this.passengers.push(passengers);
+    });
+    return this.passengers;
+  }
+  removePassenger(passenger) {
+    const index = this.passengers.indexOf(passenger);
+    if (index !== -1) {
+      this.passengers.splice(index, 1);
+    }
+    return this.passengers;
   }
 }
+const bus = new Bus(
+  ["Ian", "Joao", "Pedro", "Ana"],
+  {
+    maxSpeed: "80",
+    masPassengers: "40",
+  },
+  "Diesel"
+);
 
-// const bus = new (["Ian", "Joao", "Pedro", "Ana"], ["8", "40"]);
-// console.log(veich1.passengers);
-// console.log(veich1.rules);
+console.log("A new passenger in the bus >", bus.addPassenger(["Jonatas"]));
+console.log("A passenger remove in of the bus >", bus.removePassenger(["Ian"]));
