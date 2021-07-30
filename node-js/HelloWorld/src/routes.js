@@ -29,4 +29,13 @@ app.get("/subtract/:num1/:num2", (req, res) => {
   res.send(String(substract(num1, num2)));
 });
 
+app.post("/submit-user", (req, res) => {
+  console.log(req.body);
+  // const { name, age, height } = req.body;
+  // console.log("🚀 ~ file: routes.js ~ line 34 ~ app.post ~ height", height);
+  // console.log("🚀 ~ file: routes.js ~ line 34 ~ app.post ~ age", age);
+  // console.log("🚀 ~ file: routes.js ~ line 34 ~ app.post ~ name", name);
+
+  res.send("ok");
+});
 export default app;

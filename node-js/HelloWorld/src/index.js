@@ -1,8 +1,13 @@
 import express from "express"; // new method using
 import routes from "./routes.js";
+import bodyParser from "body-parser";
+
 //const express = require("express"); //Importing express library
 const app = express(); //Create a express app
 const port = 3000; //Define default port for the server to listen || Most used routes: 3000(front), 3333(back), 4000(api)
+
+// app.use(cors());
+app.use(express.json());
 
 app.use(routes);
 
